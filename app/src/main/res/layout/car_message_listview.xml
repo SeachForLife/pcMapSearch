@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:id="@+id/item_name_storechoose_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:textColor="#ffff0000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/car_customername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:textColor="#FF000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/item_num_storehouse_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:textColor="#FF000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/all_num_storehouse_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:textColor="#FF000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/traciing_storehouse_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:textColor="#FF000000"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/out_store_storehouse_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:textColor="#ffff0000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

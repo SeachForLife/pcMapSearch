@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:weightSum="12"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#EBEBEB">
+
+        <TextView
+            android:background="@drawable/title_bg_pc"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="门店信息"
+            android:textColor="#ffffff"
+            android:textSize="18.0dip"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:id="@+id/choose_spin"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            >
+
+            <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/door_store_name_choose" />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/door_md_name_choose" />
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/time_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="起始时间:"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/start_time_door"
+                android:textSize="12sp"
+                android:text="start-time"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="结束时间:"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/end_time_door"
+                android:textSize="12sp"
+                android:text="start-time"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/door_search"
+                android:text="查询"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_below="@+id/choose_spin"
+            android:background="#EBEBEB"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/item_name_storechoose"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="商品名称"
+                android:textColor="#FF000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/all_orderno_storehouse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="批号"
+                android:textColor="#FF000000"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/all_num_storehouse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="订单数量"
+                android:textColor="#FF000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/traciing_storehouse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="已提交"
+                android:textColor="#FF000000"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/out_store_storehouse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="时间"
+                android:textColor="#FF000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:layout_below="@id/lv_title"
+            android:background="#FFFFFF"
+            android:id="@+id/store_message_storehouse"
+            android:orientation="vertical"
+            >
+
+            <ListView
+                android:id="@+id/door_message_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="#00000000" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

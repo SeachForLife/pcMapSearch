@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="9"
+    android:background="@color/azure"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentEnd="true"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:background="@null"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/date" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:id="@+id/chart"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:id="@+id/message_car"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffffff"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="true"
+                android:textSize="15dp"
+                android:text="车牌号:京123456 \n司机:test \n目的地：经销商1,经销商2 \n随车货物:纯牛奶（100件）\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+                android:id="@+id/car_message"
+                android:layout_weight="0.10" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/refu"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>

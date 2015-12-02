@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:weightSum="12"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#EBEBEB">
+
+        <TextView
+            android:id="@+id/jingweidu"
+            android:background="@drawable/title_bg_pc"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:text="仓库库存信息及实时温度"
+            android:textColor="#ffffff"
+            android:textSize="18.0dip"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:id="@+id/store_name_choose" />
+
+        <LinearLayout
+            android:id="@+id/lv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:layout_below="@+id/store_name_choose"
+            android:background="#EBEBEB"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/item_name_storechoose"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="商品名称"
+                android:textColor="#FF000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/all_orderno_storehouse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="批号"
+                android:textColor="#FF000000"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/all_num_storehouse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="库存"
+                android:textColor="#FF000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/traciing_storehouse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="出库"
+                android:textColor="#FF000000"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/out_store_storehouse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="已提交"
+                android:textColor="#FF000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:layout_below="@id/lv_title"
+            android:background="#FFFFFF"
+            android:id="@+id/store_message_storehouse"
+            android:orientation="vertical"
+            >
+
+            <ListView
+                android:id="@+id/message_storehouse"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="#00000000" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_below="@id/store_message_storehouse"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="仓库实时温度数据"
+                android:textSize="15dp"
+                android:textColor="#FF000000"
+                android:gravity="center_horizontal"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/store_tem_storehouse"
+                android:textColor="#FF000000"
+                android:fadeScrollbars="true"
+                android:scrollbars="vertical"
+                >
+                </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

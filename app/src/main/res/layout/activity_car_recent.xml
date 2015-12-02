@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/storeMessage"
+            android:layout_alignParentBottom="true"
+            android:fadeScrollbars="true"
+            android:scrollbars="vertical"
+            android:textSize="15dp"
+            android:visibility="gone"
+            android:background="@color/result_text"
+            android:textColor="@color/viewfinder_frame"
+            />
+
+        </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/jingweidu"
+        android:background="@drawable/title_bg_pc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="冷藏车辆信息"
+        android:textColor="#ffffff"
+        android:textSize="18.0dip"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        />
+
+        <LinearLayout
+            android:id="@+id/lv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/store_name_choose"
+            android:background="#EBEBEB"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/item_name_storechoose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="车牌号"
+                android:textColor="#FF000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/item_customername_allcar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="车归属"
+                android:textColor="#FF000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/item_num_storehouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="状态"
+                android:textColor="#FF000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/all_num_storehouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="厢前℃"
+                android:textColor="#FF000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/traciing_storehouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="厢后℃"
+                android:textColor="#FF000000"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/out_store_storehouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal"
+                android:text="轨迹"
+                android:textColor="#FF000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:layout_below="@id/lv_title"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/all_car_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:divider="#00000000"
+                android:dividerHeight="6dp"
+                android:paddingRight="3.0dip" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

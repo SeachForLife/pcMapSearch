@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/id_menu_car_message"
+        android:icon="@drawable/car_logo"
+        android:showAsAction="never"
+        android:title="车辆信息"/>
+    <item
+        android:id="@+id/id_menu_storehouse_message"
+        android:icon="@drawable/storehouse"
+        android:showAsAction="never"
+        android:title="仓库信息"/>
+
+</menu>

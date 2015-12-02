@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_dialog_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/custom_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bg_pc"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/widget_edittext_dark"
+        android:textSize="40px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            android:id="@+id/layout_item_name"
+            android:visibility="gone"
+            >
+
+
+            <TextView
+                android:layout_width="76dp"
+                android:layout_height="30dp"
+                android:textSize="35px"
+                android:text="品类:"
+                android:textColor="@android:color/widget_edittext_dark"
+                android:layout_marginLeft="20dp"
+                 />
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/custom_dialog_item_name"
+                android:textSize="35px"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/suer_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_yes"
+                />
+
+            <TextView
+                android:id="@+id/custom_dialog_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:singleLine="false"
+                android:text=""
+                android:textColor="@android:color/widget_edittext_dark"
+                android:textSize="35px"
+                />
+
+            <TextView
+                android:layout_width="76dp"
+                android:layout_height="30dp"
+                android:textSize="35px"
+                android:text="数量:"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/dialog_number"
+                android:textColor="@android:color/widget_edittext_dark"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/enter_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:singleLine="false"
+                android:text=""
+                android:textColor="@android:color/widget_edittext_dark"
+                android:textSize="35px"
+                android:visibility="gone"
+                android:numeric="integer"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/custom_dialog_btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_dialog_btn_x" />
+
+            <Button
+                android:id="@+id/custom_dialog_btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_dialog_btn_x"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
