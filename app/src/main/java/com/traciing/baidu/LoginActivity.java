@@ -323,4 +323,8 @@ public class LoginActivity extends Activity {
             }
         }
     };
+
+    public static void main(String args[]){
+        System.out.println("github   Test");
+    }
 }
